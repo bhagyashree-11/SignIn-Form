@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>SignIn Form</title>
+  <style>
+    body{
+    margin: 0;
+    padding: 0;  
+   }
+/*form*/
+.box-form{
+    margin:auto;
+    margin-top: 60px;
+    width: 60vw;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex:1 1 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow:0 0 20px 6px #090b68;
+    height:80vh;
+}
+@media(max-width:980px){
+    .box-form{
+        flex-wrap:wrap;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        height: auto;
+    }
+}
+
+.box-form div{
+    height: auto;
+}
+/*left part*/
+.box-form .left{
+    color: #ffffff;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-image:url("image2.avif");
+    overflow: hidden;
+    padding-right: 60px;
+}
+.box-form .left .overlay{
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.box-form .left .overlay h1{
+    font-size: 3vmax;
+    line-height: 1;
+    font-weight: 900;
+    margin-top: 20vh;
+    margin-left: 5vh;
+    margin-bottom: 0vh;
+}
+.box-form .left .overlay p{
+    margin-top: 5vh;
+    letter-spacing: 1px;
+    margin-left: 22vh;
+    font-size:large;
+}
+
+/*right part*/
+.right{
+    margin: auto;
+    height: auto;
+}
+
+.heading{
+    font-size: 20px;
+    font-weight: bold;
+}
+.form input{
+    padding: 15px;
+    width: 350px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(199, 68, 204);
+    outline-style: none;
+}
+.btn button{
+    margin-left: -2px;
+    margin-top: 25px;
+    padding: 15px;
+    width: 390px;
+    border: none;
+    outline-style: none;
+    color: white;
+    background-color: rgb(130, 68, 133);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.forgot{
+    margin-left: 115px;
+    margin-top: 30px;
+}
+.forgot p a{
+    color: rgb(130, 68, 133);
+    text-decoration: none;
+}
+.btn1 button{
+    margin-left: -2px;
+    margin-top: 25px;
+    width: 390px;
+    border: none;
+    outline-style: none;
+    color: white;
+    background-color: rgb(29, 161, 242);
+    font-size: 16px;
+}
+.btn2 button{
+    margin-left: -2px;
+    margin-top: 25px;
+    width: 390px;
+    border: none;
+    outline-style: none;
+    color: white;
+    background-color:rgb(53, 53, 215);
+    font-size: 16px;
+}
+.mm{
+    position: relative;
+    width:60%;
+    display: flex;
+    padding-left: 110px;
+}
+
+.mm p{
+    float: right;
+    height: 20px;
+    padding-right: 40px;
+    font-size: 16px;
+    color: white;
+}
+
+.mm i{
+color: white;
+font-size: 20px;
+text-align: center;
+line-height: 20px;
+margin-top: 16px;
+}
+  </style>
+</head>
+<body>
+   <div class="box-form">
+    <div class="left">
+      <div class="overlay">
+        <h1>Welcome page</h1>
+        <p>Sign in to<br> continue to access</p>
+      </div>
+    </div>
+  
+    <div class="right">
+      <div class="section">
+        <div class="heading">
+          <h2>
+            Sign in
+          </h2>
+        </div>
+      </div>
+    
+      <div class="main">
+        <div class="form">
+          <input type="text" class="text" placeholder="Email Adress"><br>
+          <input type="password" class="Password" placeholder="Password">
+        </div>
+  
+        <div class="btn">
+          <button>Continue</button>
+        </div>
+  
+        <div class="paragraphs">
+          <div class="forgot">
+            <p><a href="#">or connect with social media</a></p>
+          </div>
+        </div>
+  
+        <div class="buttons">
+          <div class="btn1">
+            <button>
+              <div class="mm">
+                <i class="fa fa-twitter"></i>&nbsp;
+                   <p>sign in with Twitter</p>
+              </div>
+            </button>
+          </div>
+    
+          <div class="btn2">
+            <button>
+              <div class="mm">
+                <i class="fa fa-facebook"></i>&nbsp;
+                <p>sign in with facebook</p>
+              </div>
+            </button>
+          </div>  
+        </div>
+  
+      </div>
+    </div>
+   </div>
+</body>
+</html>
